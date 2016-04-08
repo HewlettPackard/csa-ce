@@ -1,4 +1,5 @@
 # HPE Cloud Service Automation Community Edition
+![HPE Cloud Service Automation Community Edition](images/csa.png?raw=true "CSA")
 
 This repo contains **scripts** which start **HPE Cloud Service Automation Community Edition 4.6 (HPE CSA CE)** in Docker. 
 
