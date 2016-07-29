@@ -1,0 +1,42 @@
+commondb:
+  image: hpsoftware/useitwithcsacodar:commondb
+  volumes:
+    - "/src/share:/share"
+  ports:
+    - "15432:5432"
+  command: "/bin/bash -c \"service postgresql start;  tail -f /dev/null\""
+csa:
+  image: hpsoftware/csa:csa46
+  volumes:
+    - "/src/share:/share"
+  ports:
+    - "18444:8444"
+  links:
+    - "commondb:commondb"
+    - "oo:oo"
+  command: "/bin/bash -c  \"sleep 120; /tmp/csaconfig.sh; tail -f /dev/null\""
+  environment:
+    dockerclient_hostname: vmhostname
+    dockerclient_ipaddress: vmipaddress
+mpp:
+  image: hpsoftware/mpp:mpp46
+  volumes:
+    - "/src/share:/share"
+  ports:
+    - "18089:8089"
+  command: "/bin/bash -c  \"sleep 150; /tmp/mppconfig.sh; tail -f /dev/null\""
+  environment:
+    dockerclient_hostname: vmhostname
+    dockerclient_ipaddress: vmipaddress
+oo:
+  image: hpsoftware/useitwithcsacodar:ooce10501
+  volumes:
+    - "/src/share:/share"
+  ports:
+    - "18445:8443"
+  links:
+    - "commondb:commondb"
+  command: "/bin/bash -c  \"sleep 60; /tmp/ooconfig.sh; tail -f /dev/null\""
+  environment:
+    dockerclient_hostname: vmhostname
+    dockerclient_ipaddress: vmipaddress

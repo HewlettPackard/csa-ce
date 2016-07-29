@@ -1,7 +1,7 @@
 # HPE Cloud Service Automation Community Edition
 ![HPE Cloud Service Automation Community Edition](images/csa.PNG?raw=true "CSA")
 
-This repo contains **scripts** which start **HPE Cloud Service Automation Community Edition 4.7 (HPE CSA CE)** in Docker. 
+This repo contains **scripts** which start **HPE Cloud Service Automation Community Edition 4.6 (HPE CSA CE)** in Docker. 
 
 HPE CSA CE solution is composed of four components (each one represents one Docker image): **CSA Management Console**, **Marketplace Portal**, **HP Operation Orchestration Community Edition (HP OO CE) Central Server** and **PostgreSQL database**. 
 
@@ -20,17 +20,15 @@ This community edition of CSA allows users to automate deployments of infrastrac
 
 ### Key features
 
-•	**Ease of automation**. Supports HPE OO CE which is  the native automation tool which helps the end user to automate any complex steps. It contains 6000+ pre-created automated operations and workflows which can be leveraged to automate the installation of software and deployment application from day one. 
+•	**Ease of automation**. Supports HPE OO CE which is  the native automation tool which helps the end user to automate any complex steps. It contains 6000+ pre-created automated operations and workflows which can be		leveraged to automate the installation of software and deployment application from day1. 
 
 •	Offers service **application portability** across a vendor- neutral ecosystem by using a sophisticated service design modeling based on **TOSCA’s guiding principles**.
 
-•	Simplified cloud design experience with intutive UI  and a content store for cloud services 
-
 •	**Single IT Service Control Point** - Simplifies administration by using a complete IT operations management toolset with a **single-pane-of-glass experience** across traditional IT, and private and public clouds.
 
-•	**Integration with third party products** like **vCenter, AWS, Azure, OpenStack, Docker, Chef, Puppet and Mesosphere** etc. SDK to integrate with home grown products or any third party products
+•	**Integration with third party products** like **vCenter, AWS, OpenStack, Docker, Chef, Puppet and Mesosphere** etc. SDK to integrate with home grown products or any third party products
 
-•	**20+ integration with HP Software products like HPE Sitescope, HPE Application Lifecycle Management, HPE Stackato, HPE Oneview etc.**
+•	**20+ integration with HP Software products like HPE Sitescope, HPE Application Lifecycle Management HPE Helion Development Platform, HPE Stackato, HPE Oneview etc.**
 
 •	Build **Cloud Agnostic blueprints** to deploy the application across different cloud vendor
 
@@ -40,23 +38,23 @@ This community edition of CSA allows users to automate deployments of infrastrac
 
 •	Heavy lifting is already done by the proven software **HP OO which acts as a central engine**
 
-•	**Authentication & Authorization** supports CAC, SSO, LDAP, SAML etc.
+•	**Authentication & Authorization** supports CAC, SSO, LDAP etc.
 
 •	**Role Based Access Control (RBAC)** support
 
 
 
 ### HPE CSA CE trial license limitations
-1.	Trial period of 30 days with unlimited deployment for any number of OSI
-2.	After expiry of trial period, upto 5 OSI are available if collection of product usage data by HPE is not allowed, and upto 25 OSI if collection of product usage data by HPE is allowed
+1.	30 days of trial period with unlimited deployment on any number of OSI
+2.	Post trial period only 5 OSI can be used
 
-### CSA version 
+### CSA version supported
 ```
-CSA 4.70 
+CSA 4.60
 ```
 
 # Prerequisites 
-1.	Set up Docker client with “docker-compose” latest version as given in this  Docker site. [Reference Site : Install Docker Engine](https://docs.docker.com/engine/installation/linux/ubuntulinux/) [Reference Site : Install Docker Compose] (https://docs.docker.com/compose/install/)
+1.	Set up Docker client with “docker-compose” as given in this  Docker site. [Reference Site](https://docs.docker.com/engine/installation/linux/ubuntulinux/)
 2.	OS & System Requirements for Docker Client/Workstation
 ```
 OS  : Ubuntu 12.x and above
@@ -65,7 +63,7 @@ RAM : 8GB
 CPU : 4
 ```
 
-# Instructions to launch HPE CSA CE 4.70
+# Instructions to launch HPE CSA CE 4.60
 
 ```
 1.	Commands to execute:
@@ -91,19 +89,19 @@ CPU : 4
 # CSA Endpoints
 Please find the exposed ports from which you can access various portals of CSA
 ```
-	CSA Management Console - https://<dockerworkstations_ip>:18444/csa
+	CSA Management Console - https://<dockerworkstaions_ip>:18444/csa
 
 	Credentials 	
 	Username: admin
 	Password: cloud
 	
-	Marketplace Portal - https://<dockerworkstations_ip>:18089
+	Marketplace Portal - https://<dockerworkstaions_ip>:18089
 
 	Credentials 	
 	Username: consumer
 	Password: cloud
 
-	Operations Orchestration Central - https://<dockerworkstations_ip>:18445/oo
+	Operations Orchestration Central - https://<dockerworkstaions_ip>:18445/oo
 	
 	Credentials 
 	Username: admin
@@ -112,21 +110,21 @@ Please find the exposed ports from which you can access various portals of CSA
 
 
 ### Documents
-The following documentation from the CSA 4.70 full release version is available for your reference:
-1.	[Concepts Guide](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Concepts_Guide.pdf)
-2.	[Help Guide - Management Console](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Management_Console_Help.pdf)
-3.	[Help Guide - Marketplace Portal](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Marketplace_Portal_Help.pdf)
-4.	[Configuration Guide](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Configuration_Guide.pdf)
+1.	[Concepts Guide](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Concepts_Guide.pdf)
+2.	[Help Guide - Management Console](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Management_Console_Help.pdf)
+3.	[Help Guide - Marketplace Portal](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Marketplace_Portal_Help.pdf)
+4.	[Configuration Guide](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Configuration_Guide.pdf)
 
 
 
 ### Important notes
 
-•  Launch  HP OO Central portal (https://<dockerworkstations_ip>:18445/oo)   
-	Content Management > Configuration Items > System Properties > CSA_REST_URI should use the host name or IP Address of the Docker client machine instead of localhost, and the port 18444 instead of 8444
-	Content Management > Configuration Items > System Accounts > CSA_REST_CREDENTIALS should use the user name as ooInboundUser and the password as cloud 
+• Please read through the CSA install and configure guide for post installation steps. For example, do remember to change in the OO Central server, 
+	Content Management --> Configuration Items --> System Properties --> CSA_REST_URI
 
-• HPSSO/LWSSO is not enabled. Please refer the help guide to configure HPSSO/LWSSO. 
+• HPSSO/LWSSO is not enabled. Please refer the help guide to configure HPSSO/LWSSO. Please note that, "ipaddress" is used to configure CSA/CSA
+
+• CSA & OO are connected by Docker client machine IP with external port
 
 • The scripts which helps for configuring the CSA will be available at the /tmp location of all the containers (please reach out to us for any enhancement on these scripts).
 
@@ -134,15 +132,11 @@ The following documentation from the CSA 4.70 full release version is available 
 	/usr/local/hpe/csa/Tools/CSLContentInstaller/silent_install.xml. 
 	For CSA, please use silent_install_csa.xml, incase if you have installed CSA license
 
-• Alternatively you can register with HPE using HP Passport sign-in and deploy wide variety of contents from HPE CSA Content store. For  more information please check the [HPLN] (https://hpln.hpe.com/). To get access please check [HPLN Help] (https://hpln.hpe.com/help/content-access)
-
-
 ### Known Issues
-For product known issues, please refer CSA 4.60 Release Notes [here](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Release_Notes.pdf).
-
+For product known issues, please refer CSA 4.60 Release Notes [here](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Release_Notes.pdf).
 
 ### License
 View [license](https://github.com/HewlettPackard/csa-ce/blob/master/LICENSE) information for the software contained in this repo.
 
 ### Issues
-If you have any problems with the software, or have questions about the software contained in this repo, please write us to tech-ambassadors-capu@hpe.com or [GitHub issue](https://github.com/HewlettPackard/csa-ce/issues).
+If you have any problems with or questions about the software contained in this repo, please write us to tech-ambassadors-capu@hpe.com or [GitHub issue](https://github.com/HewlettPackard/csa-ce/issues).
