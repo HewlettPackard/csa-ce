@@ -128,8 +128,10 @@ The following documentation from the CSA 4.70 full release version is available 
 
 ### Important notes
 
-•  Launch  HP OO Central portal (https://<dockerworkstations_ip>:18445/oo)   
+•  Launch  HP OO Central portal https://<dockerworkstations_ip>:18445/oo
+
 	Content Management > Configuration Items > System Properties > CSA_REST_URI should use the host name or IP Address of the Docker client machine instead of localhost, and the port 18444 instead of 8444
+
 	Content Management > Configuration Items > System Accounts > CSA_REST_CREDENTIALS should use the user name as ooInboundUser and the password as cloud 
 
 • HPSSO/LWSSO is not enabled. Please refer the help guide to configure HPSSO/LWSSO. 
@@ -137,10 +139,14 @@ The following documentation from the CSA 4.70 full release version is available 
 • The scripts which helps for configuring the CSA will be available at the /tmp location of all the containers (please reach out to us for any enhancement on these scripts).
 
 • Any capsule content upload which is new can be done within Docker CSA container and no extra configurations are required. The content zip file location should be mentioned in the
+
 	/usr/local/hpe/csa/Tools/CSLContentInstaller/silent_install.xml. 
+
 	For CSA, please use silent_install_csa.xml, incase if you have installed CSA license
 
-• Alternatively you can register with HPE using HP Passport sign-in and deploy wide variety of contents from HPE CSA Content store. For  more information please check the [HPLN] (https://hpln.hpe.com/). To get access please check [HPLN Help] (https://hpln.hpe.com/help/content-access)
+• Alternatively you can register with HPE using HP Passport sign-in and deploy wide variety of contents from HPE CSA Content store. 
+  
+  For  more information please check the [HPLN] (https://hpln.hpe.com/). To get access please check [HPLN Help] (https://hpln.hpe.com/help/content-access)
 
 
 ### Known Issues
