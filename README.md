@@ -73,14 +73,16 @@ CPU : 4
 
 	•	mkdir /tmp/csa
 	•	cd /tmp/csa 
-	•	curl -k -L https://github.com/HewlettPackard/csa-ce/raw/master/buildEnv-dockercompose.sh | bash /dev/stdin <hostname> <ipaddress>
+	•	curl -k -L https://github.com/HewlettPackard/csa-ce/raw/master/buildEnv-dockercompose.sh | bash /dev/stdin <hostname> <ipaddress> [<proxyhost>] [<proxyport>]
  
   Please replace the arguments as per the below instruction,
   <hostname> is the Docker workstation/client hostname
   <ipaddress> is the Docker workstation/client ipaddress
+  <proxyhost> optional proxy host
+  <proxyport> optional proxy port
 
   For example, the Curl command should be as below. The hostname and ipaddress are sample
-  curl -k -L https://github.com/HewlettPackard/csa-ce/raw/master/buildEnv-dockercompose.sh | bash /dev/stdin mydockerclient.mydomain.com 10.1.1.12
+  curl -k -L https://github.com/HewlettPackard/csa-ce/raw/master/buildEnv-dockercompose.sh | bash /dev/stdin mydockerclient.mydomain.com 10.1.1.12 web-proxy.mydomain.com 8080
 
   Please always stop or start the containers using below commands,
   To stop: docker-compose stop
@@ -113,9 +115,13 @@ Please find the exposed ports from which you can access various portals of CSA
 
 ### Documents
 The following documentation from the CSA 4.70 full release version is available for your reference:
+
 1.	[Concepts Guide](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Concepts_Guide.pdf)
+
 2.	[Help Guide - Management Console](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Management_Console_Help.pdf)
+
 3.	[Help Guide - Marketplace Portal](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Marketplace_Portal_Help.pdf)
+
 4.	[Configuration Guide](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Configuration_Guide.pdf)
 
 
@@ -138,7 +144,7 @@ The following documentation from the CSA 4.70 full release version is available 
 
 
 ### Known Issues
-For product known issues, please refer CSA 4.60 Release Notes [here](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Release_Notes.pdf).
+For product known issues, please refer CSA 4.70 Release Notes [here](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_470_Release_Notes.pdf).
 
 
 ### License
