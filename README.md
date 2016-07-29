@@ -28,7 +28,7 @@ This community edition of CSA allows users to automate deployments of infrastrac
 
 •	**Single IT Service Control Point** - Simplifies administration by using a complete IT operations management toolset with a **single-pane-of-glass experience** across traditional IT, and private and public clouds.
 
-•	**Integration with third party products** like **vCenter, AWS, Azure, OpenStack, Docker, Chef, Puppet and Mesosphere** etc. SDK to integrate with home grown products or any third party products
+•	**Integration with third party products** like **vCenter, AWS, OpenStack, Docker Engine, Docker UCP, Docker Cloud, Chef, Puppet and Mesosphere** etc. SDK to integrate with home grown products or any third party products
 
 •	**20+ integration with HP Software products like HPE Sitescope, HPE Application Lifecycle Management, HPE Stackato, HPE Oneview etc.**
 
