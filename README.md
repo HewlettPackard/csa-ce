@@ -47,8 +47,9 @@ This community edition of CSA allows users to automate deployments of infrastrac
 
 
 ### HPE CSA CE trial license limitations
-1.	Trial period of 30 days with unlimited deployment for any number of OSI
-2.	After expiry of trial period, upto 5 OSI are available if collection of product usage data by HPE is not allowed, and upto 25 OSI if collection of product usage data by HPE is allowed
+1.	Trial period of 30 days with unlimited deployment for any number of OSI.
+2.	After expiry of trial period upto 5 OSI will be  available if collection of product usage data by HPE is not selected during product activation.
+3.	Upto 25 OSI will be available if collection of product usage data by HPE is selected during product activation.
 
 ### CSA version 
 ```

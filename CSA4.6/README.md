@@ -110,10 +110,10 @@ Please find the exposed ports from which you can access various portals of CSA
 
 
 ### Documents
-1.	[Concepts Guide](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Concepts_Guide.pdf)
-2.	[Help Guide - Management Console](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Management_Console_Help.pdf)
-3.	[Help Guide - Marketplace Portal](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Marketplace_Portal_Help.pdf)
-4.	[Configuration Guide](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Configuration_Guide.pdf)
+1.	[Concepts Guide](https://github.com/HewlettPackard/csa-ce/raw/master/CSA4.6/Docs/CSA_460_Concepts_Guide.pdf)
+2.	[Help Guide - Management Console](https://github.com/HewlettPackard/csa-ce/raw/master/CSA4.6/Docs/CSA_460_Management_Console_Help.pdf)
+3.	[Help Guide - Marketplace Portal](https://github.com/HewlettPackard/csa-ce/raw/master/CSA4.6/Docs/CSA_460_Marketplace_Portal_Help.pdf)
+4.	[Configuration Guide](https://github.com/HewlettPackard/csa-ce/raw/master/CSA4.6/Docs/CSA_460_Configuration_Guide.pdf)
 
 
 
@@ -133,7 +133,7 @@ Please find the exposed ports from which you can access various portals of CSA
 	For CSA, please use silent_install_csa.xml, incase if you have installed CSA license
 
 ### Known Issues
-For product known issues, please refer CSA 4.60 Release Notes [here](https://github.com/HewlettPackard/csa-ce/raw/master/Docs/CSA_460_Release_Notes.pdf).
+For product known issues, please refer CSA 4.60 Release Notes [here](https://github.com/HewlettPackard/csa-ce/raw/master/CSA4.6/Docs/CSA_460_Release_Notes.pdf).
 
 ### License
 View [license](https://github.com/HewlettPackard/csa-ce/blob/master/LICENSE) information for the software contained in this repo.
