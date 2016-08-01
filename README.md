@@ -89,11 +89,14 @@ You can also refer the “docker-compose.yml” file hosted in the “GitHub” 
 	•	cd /tmp/csa 
 	•	curl -k -L https://github.com/HewlettPackard/csa-ce/raw/master/buildEnv-dockercompose.sh | bash /dev/stdin <hostname> <ipaddress> [<proxyhost>] [<proxyport>]
  
+ Proxyhost and Proxyport arguments are optional if the container already have internet access.
+ This proxy setting will be used to connect the licensing server over internet. Provide the proxy server details if your container is running behind a firewall.
+
   Please replace the arguments as per the below instruction,
   <hostname> is the Docker workstation/client hostname
   <ipaddress> is the Docker workstation/client ipaddress
-  <proxyhost> optional proxy host
-  <proxyport> optional proxy port
+  <proxyhost>  proxy host 
+  <proxyport>  proxy port 
 
   For example, the Curl command should be as below. The hostname and ipaddress are sample
   curl -k -L https://github.com/HewlettPackard/csa-ce/raw/master/buildEnv-dockercompose.sh | bash /dev/stdin mydockerclient.mydomain.com 10.1.1.12 web-proxy.mydomain.com 8080
