@@ -67,13 +67,13 @@ CPU : 4
 ```
 
 ```
-Please do not pull the Codar image directly as it will not stand up the complete Codar product.
+Please do not pull the "csa" image directly as it will not stand up the complete HPE CSA product.
 
-This Codar CE image has dependency  over other images hosted in “useitwithcsacodar” repository for example PostgreSQL database and HPE Operations Orchestration CE.
+This HPE CSA CE image has dependency  over other images hosted in “useitwithcsacodar” repository for example PostgreSQL database and HPE Operations Orchestration CE.
 
-Also the Codar CE image tag “latest” currently refers to Codar 1.6. By August 05 2016  tag “latest” of Codar CE will point to Codar 1.7 image.
+Also the "csa" image tag “latest” currently refers to HPE CSA 4.60. By August 05 2016  tag “latest” of "csa" will point to HPE CSA 4.70 image.
 
-Follow the instructions given in the “Instructions to launch HPE Codar CE 1.70 “ below in order to smoothly stand up Codar 1.7 product. 
+Follow the instructions given in the “Instructions to launch HPE CSA CE 4.70 “ below in order to smoothly stand up HPE CSA 4.70 product. 
 
 You can also refer the “docker-compose.yml” file hosted in the “GitHub” to stand up the product. 
 ```
