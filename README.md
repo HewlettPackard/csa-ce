@@ -71,8 +71,6 @@ Please do not pull the "csa" image directly as it will not stand up the complete
 
 The "csa" image has dependency  over other images hosted in “useitwithcsacodar” repository for example PostgreSQL database and HPE Operations Orchestration CE.
 
-Also the "csa" image tag “latest” currently refers to HPE CSA 4.60. By August 05 2016  tag “latest” of "csa" will point to HPE CSA 4.70 image.
-
 Follow the instructions given in the “Instructions to launch HPE CSA CE 4.70 “ below in order to smoothly stand up HPE CSA 4.70 product. 
 
 You can also refer the “docker-compose.yml” file hosted in the “GitHub” to stand up the product. 
