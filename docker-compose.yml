@@ -19,7 +19,7 @@ services:
    ports:
     - "18445:8443"
   csa:
-   image: hpsoftware/csa:csa47
+   image: hpsoftware/csa:latest
    container_name: csa
    environment:
     - dockerclient_hostname=vmhostname
